@@ -16,7 +16,6 @@
 ## Specific to RubyMotion:
 .dat*
 .repl_history
-build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
@@ -37,6 +36,7 @@ build-iPhoneSimulator/
 
 ## Environment normalization:
 /.bundle/
+/vendor
 /vendor/bundle
 /lib/bundler/man/
 

@@ -1,0 +1,10 @@
+[Unit]
+Description=Foo
+
+[Service]
+ExecStart=/usr/bin/servant runserver
+User=servant
+Group=servant
+
+[Install]
+WantedBy=multi-user.target
