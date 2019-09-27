@@ -1,0 +1,9 @@
+---
+
+# Example of list of IP assigned
+IP_POOL:
+  - '10.10.10.10'
+  - '10.20.10.20'
+
+# Path where the Vagrantfile will be loaded
+VAGRANTFILE_PATH: '/etc/servant.d/Vagrantfile_Ubuntu'

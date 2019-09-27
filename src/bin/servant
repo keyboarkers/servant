@@ -1,0 +1,37 @@
+#!/usr/bin/ruby
+
+require 'thor'
+
+class ServantCLI < Thor
+  class_option :verbose, :type => :boolean, :aliases => "-v"
+
+  desc "up NAME", "Create a vagrant instance"
+  def up
+    puts "uP!"
+  end
+
+  desc "destroy NAME", "Destroy a vagrant instance"
+  def destroy
+    puts "Destroy!"
+  end
+
+  desc "status NAME", "Checks the status of a vagrant instance"
+  def status
+    puts "Status"
+  end
+
+  desc "extend NAME", "Extends the duration of a vagrant instance"
+  def extend
+    puts "extend!"
+  end
+
+  desc "hidden TYPE", "This will make the service start", :hide => true
+  def runserver
+    puts "This will make the service start!"
+  end
+
+end
+
+ServantCLI.start(ARGV)
+
+  
